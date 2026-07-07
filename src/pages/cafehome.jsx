@@ -2,11 +2,9 @@ import './cafehome.css';
 
 function Cafehome() {
   return (
-    <div className="cafehome">
-      <h1>カフェマップ</h1>
-      <p>ここに内容を書くあい</p>
-
-      <button>ボタン</button>
+    <div className="container">
+      <div className="photo-box">  
+      </div>
     </div>
   );
 }

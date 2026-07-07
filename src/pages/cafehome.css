@@ -1,4 +1,20 @@
 /* 画面全体 */
+.container {
+  display: flex; /* 要素をどう並べるか・表示するか　flex:子要素を自由に並べられる*/
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央 */
+  height: 100vh;
+}
+
+.photo-box {
+  width: 300px;
+  height: 200px;
+  background-image: url("../assets/rogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+  
 .cafehome {
   min-height: 100vh;
   background: #f5f7fa;
