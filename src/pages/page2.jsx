@@ -1,11 +1,11 @@
 import './cafehome.css';
 
-function Page1() {
+function Page2() {
   return (
     <div className="container">
-     <h1>Page1です!</h1>
+     <h1>Page2です!</h1>
     </div>
   );
 }
 
-export default Page1;
+export default Page2;
