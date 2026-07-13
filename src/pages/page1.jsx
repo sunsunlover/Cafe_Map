@@ -114,13 +114,13 @@ function Page1() {
     name: "ROCA Coffee Rosters",
     category: "coffee",
     area: "墨田区",
-positionposition: [35.71736501267831,139.81575338322745],
+    position: [35.71736501267831,139.81575338322745],
     image: cafeImage,
     description: "コーヒーショップ・喫茶店",
   },
   {
     id: 12,
-    name: "haydEn, cafeposition",
+    name: "haydEn",
     category: "coffee",
     area: "墨田区",
     position: [35.71225524221233, 139.80943909370612],
@@ -784,15 +784,6 @@ positionposition: [35.71736501267831,139.81575338322745],
     ///ここまで世田谷区
     
     ///ここから目黒区    
-  {
-    id: 79,
-    name: "",
-    category: "",
-    area: "",
-    position: [, ],
-    image: cafeImage,
-    description: "",
-  }, 
 
     ///ここまで目黒区
 
