@@ -18,7 +18,7 @@ import { Sheet } from "react-modal-sheet";
             {selectedCafe ? (
                 <div style={{ padding: "20px" }}>
                   <button onClick={() => setSelectedCafe(null)}>
-                     ← メニューに戻る
+                     ← メニュー
                   </button>            
                     <img
                       src={selectedCafe.image}
