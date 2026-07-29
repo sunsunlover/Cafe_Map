@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaf
 import BottomSheet from "../components/BottomSheet";
 import BottomNav from "../components/BottomNav";
 import cafeImage from "../assets/rogo.jpg";
+import cafeImage1 from "../assets/homerogo.png";
 import './cafehome.css';
 
 function MapClickHandler({ setSelectedCafe }) {
@@ -41,7 +42,7 @@ function Page1() {
     category: "coffee",
     area: "千代田区",
     position: [35.68321751234949, 139.76136624811463],
-    image: cafeImage,
+    image: cafeImage1,
     description: "コーヒーショップ・喫茶店",
   },
   {
