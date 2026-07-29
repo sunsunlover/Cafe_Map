@@ -16,10 +16,7 @@ import { Sheet } from "react-modal-sheet";
 
         <Sheet.Content>
             {selectedCafe ? (
-                <div style={{ padding: "20px" }}>
-                  <button onClick={() => setSelectedCafe(null)}>
-                     ← メニュー
-                  </button>            
+                <div style={{ padding: "20px" }}>         
                     <img
                       src={selectedCafe.image}
                       alt={selectedCafe.name}
@@ -29,21 +26,7 @@ import { Sheet } from "react-modal-sheet";
 
                     <p>{selectedCafe.description}</p>
                 </div>
-            ) : (
-          <div style={{ padding: "20px" }}>
-            <h3>メニュー</h3>
-
-            <button>提案</button>
-            <br /><br />
-
-            <button>マイリスト</button>
-            <br /><br />
-
-            <button>メモリー</button>
-            
-          </div>
-          
-            )}
+          ) : null}
         </Sheet.Content>
       </Sheet.Container>
 

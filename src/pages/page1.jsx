@@ -1,12 +1,27 @@
 import { useState } from "react";
-import { MapContainer, TileLayer, Marker, } from "react-leaflet";
+
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 import BottomSheet from "../components/BottomSheet";
+import BottomNav from "../components/BottomNav";
 import cafeImage from "../assets/rogo.jpg";
 import './cafehome.css';
 
+function MapClickHandler({ setSelectedCafe }) {
+  const map = useMapEvents({
+    click(e) {
+      // ピン以外（地図）をクリックしたら解除
+      if (e.originalEvent.target.classList.contains("leaflet-container")) {
+        setSelectedCafe(null);
+      }
+    },
+  });
+
+  return null;
+}
+
 function Page1() {
 
-  const [sheetOpen, setSheetOpen] = useState(true);
+  const [sheetOpen, setSheetOpen] = useState(false);
   const [selectedCafe, setSelectedCafe] = useState(null);
   const [snapIndex, setSnapIndex] = useState(2);
 
@@ -1260,6 +1275,9 @@ function Page1() {
         zoom={13}
         style={{ height: "100vh", width: "100%" }}
       >
+
+        <MapClickHandler setSelectedCafe={setSelectedCafe} />  
+
         <TileLayer
           attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -1270,9 +1288,9 @@ function Page1() {
                 key={cafe.id}
                 position={cafe.position}
                 eventHandlers={{
-                  click: () => {
-                    setSelectedCafe(cafe);
-                    setSheetOpen(true);
+                    click: () => {
+                     setSelectedCafe(cafe);
+                     setSheetOpen(true);
                   },
                 }}
               />
@@ -1280,6 +1298,7 @@ function Page1() {
           
 
       </MapContainer>
+      
       <BottomSheet
         open={sheetOpen}
         setOpen={setSheetOpen}
@@ -1288,6 +1307,7 @@ function Page1() {
         setSnapIndex={setSnapIndex}
         setSelectedCafe={setSelectedCafe}
      />
+
      {!sheetOpen && (
        <button
          className="open-sheet-btn"
@@ -1300,6 +1320,9 @@ function Page1() {
         </div>
       </button>
      )}
+
+     <BottomNav />
+
     </div>
   );
 }

@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './cafehome.css';
 
-function Cafehome() {
+function Rogo() {
   const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/page1");
+      navigate("/Home");
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -21,4 +21,4 @@ function Cafehome() {
   );
 }
 
-export default Cafehome;
+export default Rogo;
