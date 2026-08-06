@@ -5,15 +5,15 @@ import BottomSheet from "../components/BottomSheet";
 import BottomNav from "../components/BottomNav";
 import cafeImage from "../assets/rogo.jpg";
 import cafeImage1 from "../assets/homerogo.png";
+import L from "leaflet";
+import blueMarker from "../assets/bluemarker.png";
+import redMarker from "../assets/redmarker.png";
 import './cafehome.css';
 
 function MapClickHandler({ setSelectedCafe }) {
-  const map = useMapEvents({
-    click(e) {
-      // ピン以外（地図）をクリックしたら解除
-      if (e.originalEvent.target.classList.contains("leaflet-container")) {
-        setSelectedCafe(null);
-      }
+  useMapEvents({
+    click() {
+      setSelectedCafe(null);
     },
   });
 
@@ -25,6 +25,18 @@ function Map() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [selectedCafe, setSelectedCafe] = useState(null);
   const [snapIndex, setSnapIndex] = useState(2);
+
+  const BlueIcon = new L.Icon({
+   iconUrl: blueMarker,
+   iconSize: [40, 40],
+   iconAnchor: [20, 40],
+  });
+
+  const RedIcon = new L.Icon({
+   iconUrl: redMarker,
+   iconSize: [40, 40],
+   iconAnchor: [20, 40],
+  });
 
   const cafes = [
   {
@@ -1288,6 +1300,7 @@ function Map() {
              <Marker
                 key={cafe.id}
                 position={cafe.position}
+                icon={selectedCafe?.id === cafe.id ? RedIcon : BlueIcon}
                 eventHandlers={{
                     click: () => {
                      setSelectedCafe(cafe);
