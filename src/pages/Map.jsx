@@ -20,7 +20,7 @@ function MapClickHandler({ setSelectedCafe }) {
   return null;
 }
 
-function Page1() {
+function Map() {
 
   const [sheetOpen, setSheetOpen] = useState(false);
   const [selectedCafe, setSelectedCafe] = useState(null);
@@ -1328,4 +1328,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default Map;

@@ -4,8 +4,8 @@ import {
   FaMapMarkedAlt,
   FaHeart,
   FaSearch,
-  FaList,
-  FaLocationArrow,
+  FaCalendarAlt,
+  FaBookOpen,
   FaUser
 } from "react-icons/fa";
 
@@ -15,27 +15,27 @@ function BottomNav() {
   return (
     <div className="bottom-nav">
 
-      <button onClick={() => navigate("/page1")}>
+      <button onClick={() => navigate("/Map")}>
         <FaMapMarkedAlt size={28} />
       </button>
 
-      <button>
+      <button onClick={() => navigate("/List")}>
         <FaHeart size={28} />
       </button>
 
-      <button>
+      <button onClick={() => navigate("/Search")}>
         <FaSearch size={28} />
       </button>
 
-      <button>
-        <FaList size={28} />
+      <button onClick={() => navigate("/Memory")}>
+        <FaCalendarAlt size={28} />
       </button>
 
-      <button>
-        <FaLocationArrow size={28} />
+      <button onClick={() => navigate("/Help")}>
+        <FaBookOpen size={28} />
       </button>
 
-      <button>
+      <button onClick={() => navigate("/Account")}>
         <FaUser size={28} />
       </button>
 
