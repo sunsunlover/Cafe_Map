@@ -5,6 +5,7 @@ import Rogo from "./pages/Rogo";
 import Map from "./pages/Map";
 import Home from "./pages/Home"
 import List from "./pages/List";
+import CategoryList from "./pages/CategoryList";
 import Search from "./pages/Search";
 import Help from "./pages/Help";
 import Account from "./pages/Account";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/map" element={<Map />} />
         <Route path="/home" element={<Home />} />
         <Route path="/list" element={<List />} />
+        <Route path="/category/:category" element={<CategoryList />} />
         <Route path="/search" element={<Search />} />
         <Route path="/help" element={<Help />} />
         <Route path="/account" element={<Account />} />

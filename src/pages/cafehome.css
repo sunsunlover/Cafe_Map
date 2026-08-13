@@ -172,3 +172,9 @@ button:active {
 .search-container {
   padding: 20px;
 }
+
+.list-container button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}

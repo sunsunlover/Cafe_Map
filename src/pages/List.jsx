@@ -7,6 +7,17 @@ function List() {
   return (
     <div className="list-container">
       <h1>保存リスト</h1>
+      <button onClick={() => navigate("/category/coffee")}>
+        Coffee
+      </button>
+
+      <button onClick={() => navigate("/category/cake")}>
+        Cake
+      </button>
+
+      <button onClick={() => navigate("/category/tea")}>
+        Tea
+      </button>
     </div>
 
   );
