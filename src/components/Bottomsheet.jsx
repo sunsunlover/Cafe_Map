@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 
 import { FiHeart } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
+import { ImCheckmark } from "react-icons/im";
+import { ImCheckmark2 } from "react-icons/im";
 
 function BottomSheet({
   open,
@@ -13,14 +15,18 @@ function BottomSheet({
   setSelectedCafe,
 }) {
   const [saved, setSaved] = useState(false);
+  const [visited, setVisited] = useState(false);
 
-  // カフェを選択したとき、そのカフェが保存済みか確認
+  // カフェを選択したとき、
+  // お気に入り・行ったところの保存状態を確認
   useEffect(() => {
     if (!selectedCafe) {
       setSaved(false);
+      setVisited(false);
       return;
     }
 
+    // お気に入りを確認
     const savedCafes =
       JSON.parse(localStorage.getItem("savedCafes")) || [];
 
@@ -29,9 +35,21 @@ function BottomSheet({
     );
 
     setSaved(alreadySaved);
+
+    // 行ったところを確認
+    const visitedCafes =
+      JSON.parse(localStorage.getItem("visitedCafes")) || [];
+
+    const alreadyVisited = visitedCafes.some(
+      (cafe) => cafe.id === selectedCafe.id
+    );
+
+    setVisited(alreadyVisited);
+
   }, [selectedCafe]);
 
-  // ハートを押したとき
+
+  // ❤️ お気に入りボタン
   const handleSave = () => {
     if (!selectedCafe) return;
 
@@ -43,7 +61,7 @@ function BottomSheet({
     );
 
     if (alreadySaved) {
-      // 保存済みなら削除
+      // 保存解除
       const newSavedCafes = savedCafes.filter(
         (cafe) => cafe.id !== selectedCafe.id
       );
@@ -54,8 +72,9 @@ function BottomSheet({
       );
 
       setSaved(false);
+
     } else {
-      // 保存されていなければ追加
+      // 保存
       savedCafes.push(selectedCafe);
 
       localStorage.setItem(
@@ -67,6 +86,45 @@ function BottomSheet({
     }
   };
 
+
+  // 📍 行ったところボタン
+  const handleVisited = () => {
+    if (!selectedCafe) return;
+
+    const visitedCafes =
+      JSON.parse(localStorage.getItem("visitedCafes")) || [];
+
+    const alreadyVisited = visitedCafes.some(
+      (cafe) => cafe.id === selectedCafe.id
+    );
+
+    if (alreadyVisited) {
+      // 保存解除
+      const newVisitedCafes = visitedCafes.filter(
+        (cafe) => cafe.id !== selectedCafe.id
+      );
+
+      localStorage.setItem(
+        "visitedCafes",
+        JSON.stringify(newVisitedCafes)
+      );
+
+      setVisited(false);
+
+    } else {
+      // 保存
+      visitedCafes.push(selectedCafe);
+
+      localStorage.setItem(
+        "visitedCafes",
+        JSON.stringify(visitedCafes)
+      );
+
+      setVisited(true);
+    }
+  };
+
+
   return (
     <Sheet
       isOpen={open}
@@ -77,9 +135,11 @@ function BottomSheet({
       onSnap={setSnapIndex}
     >
       <Sheet.Container>
+
         <Sheet.Header />
 
         <Sheet.Content>
+
           {selectedCafe ? (
             <div style={{ padding: "20px" }}>
 
@@ -99,30 +159,51 @@ function BottomSheet({
                   alignItems: "center",
                 }}
               >
+
                 <h2>{selectedCafe.name}</h2>
 
-              <button
-                 onClick={handleSave}
-                 style={{
-                   background: "none", 
-                   border: "none",
-                   cursor: "pointer",
-                   fontSize: "28px",
-                   color: saved ? "red" : "gray",
+                {/* ❤️ お気に入り */}
+                <button
+                  onClick={handleSave}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "28px",
+                    color: saved ? "red" : "gray",
                   }}
-              >
-                   {saved ? <FaHeart /> : <FiHeart />}
-              </button>
+                >
+                  {saved ? <FaHeart /> : <FiHeart />}
+                </button>
+
+                {/* 📍 行ったところ */}
+                <button
+                  onClick={handleVisited}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "28px",
+                    color: visited ? "green" : "gray",
+                  }}
+                >
+                 {visited ? <ImCheckmark /> : <ImCheckmark2 />}
+                </button>
+
               </div>
 
               <p>{selectedCafe.description}</p>
 
             </div>
+
           ) : null}
+
         </Sheet.Content>
+
       </Sheet.Container>
 
       <Sheet.Backdrop />
+
     </Sheet>
   );
 }

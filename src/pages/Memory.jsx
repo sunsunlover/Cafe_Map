@@ -6,7 +6,11 @@ function Memory() {
  
   return (
     <div className="memory-container">
-      <h1>メモリ</h1>
+      <h1>思い出</h1>
+
+      <button onClick={() => navigate("/visited")}>
+        行ったところ
+      </button>
     </div>
 
   );

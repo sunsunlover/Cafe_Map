@@ -30,7 +30,6 @@
 h1 {
   color: #333;
   text-align: left;
-  height: 700px;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -177,4 +176,60 @@ button:active {
   display: block;
   width: 80%;
   margin: 10px auto;
+}
+
+.category-list-container {
+  padding: 10px;
+}
+
+.category-list-container h1 {
+  margin: 0 0 15px 0;
+}
+
+/* カフェ一覧 */
+.cafe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+/* カフェカード */
+.cafe-card {
+  width: 100%;
+  min-height: 130px;
+
+  display: flex;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+/* カフェ写真 */
+.cafe-card-image {
+  width: 130px;
+  height: 130px;
+
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* カフェ情報 */
+.cafe-card-info {
+  padding: 15px;
+}
+
+.cafe-card-info h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.cafe-card-info p {
+  margin: 0;
+  font-size: 15px;
 }

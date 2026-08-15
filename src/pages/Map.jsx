@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 import BottomSheet from "../components/BottomSheet";
@@ -21,6 +22,7 @@ function MapClickHandler({ setSelectedCafe }) {
 
 function Map() {
 
+  const location = useLocation();
   const [sheetOpen, setSheetOpen] = useState(false);
   const [selectedCafe, setSelectedCafe] = useState(null);
   const [snapIndex, setSnapIndex] = useState(2);
@@ -38,6 +40,7 @@ function Map() {
   });
 
   const cafes = [
+    
   {
     id: 1,
     name: "Bicycle Coffee Tokyo",
@@ -1279,30 +1282,45 @@ function Map() {
 
 ];
 
-  return (
-    <div className="container">
+  useEffect(() => {
+    const cafeId = location.state?.cafeId;
 
-      <MapContainer
-        center={[35.681236, 139.767125]}
-        zoom={13}
-        style={{ height: "100vh", width: "100%" }}
-      >
+    if (cafeId) {
+      const cafe = cafes.find(
+        (cafe) => cafe.id === cafeId
+      );
 
-        <MapClickHandler setSelectedCafe={setSelectedCafe} />  
+      if (cafe) {
+        setSelectedCafe(cafe);
+        setSheetOpen(true);
+      }
+    }
+  }, [location.state]);
 
-        <TileLayer
-          attribution="&copy; OpenStreetMap contributors"
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
+    return (
+      <div className="container">
 
-          {cafes.map((cafe) => (
-             <Marker
-                key={cafe.id}
-                position={cafe.position}
-                icon={selectedCafe?.id === cafe.id ? RedIcon : BlueIcon}
-                eventHandlers={{
-                    click: () => {
-                     setSelectedCafe(cafe);
+        <MapContainer
+          center={[35.681236, 139.767125]}
+          zoom={13}
+          style={{ height: "100vh", width: "100%" }}
+        >
+
+          <MapClickHandler setSelectedCafe={setSelectedCafe} />  
+
+          <TileLayer
+            attribution="&copy; OpenStreetMap contributors"
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+
+            {cafes.map((cafe) => (
+               <Marker
+                  key={cafe.id}
+                  position={cafe.position}
+                  icon={selectedCafe?.id === cafe.id ? RedIcon : BlueIcon}
+                  eventHandlers={{
+                      click: () => {
+                      setSelectedCafe(cafe);
                      setSheetOpen(true);
                   },
                 }}

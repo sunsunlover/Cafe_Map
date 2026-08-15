@@ -10,6 +10,8 @@ import Search from "./pages/Search";
 import Help from "./pages/Help";
 import Account from "./pages/Account";
 import Memory from "./pages/Memory";
+import VisitedList from "./pages/VisitedList";
+import VisitedCategoryList from "./pages/VisitedCategoryList";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/account" element={<Account />} />
         <Route path="/memory" element={<Memory />} />
+        <Route path="/visited" element={<VisitedList />} />
+        <Route path="/visited/:category" element={<VisitedCategoryList />} />
       </Routes>
     </Router>
   );
