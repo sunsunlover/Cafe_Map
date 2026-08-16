@@ -1,13 +1,26 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
+
 import BottomSheet from "../components/BottomSheet";
 import BottomNav from "../components/BottomNav";
-import cafeImage from "../assets/rogo.jpg";
 import L from "leaflet";
-import blueMarker from "../assets/bluemarker.png";
-import redMarker from "../assets/redmarker.png";
+import { renderToStaticMarkup } from "react-dom/server";
+
+import {
+  FaCoffee,
+  FaStore,
+  FaBreadSlice,
+  FaUtensils,
+  FaFire,
+  FaLandmark,
+} from "react-icons/fa";
+
+import {
+  FaCookie,
+} from "react-icons/fa6";
+
 import './cafehome.css';
 
 function MapClickHandler({ setSelectedCafe }) {
@@ -27,17 +40,33 @@ function Map() {
   const [selectedCafe, setSelectedCafe] = useState(null);
   const [snapIndex, setSnapIndex] = useState(2);
 
-  const BlueIcon = new L.Icon({
-   iconUrl: blueMarker,
-   iconSize: [40, 40],
-   iconAnchor: [20, 40],
-  });
+  const createCafeIcon = (category, selected) => {
+  const iconMap = {
+    coffee: FaCoffee,
+    cafe: FaStore,
+    sweets: FaCookie,
+    bakery: FaBreadSlice,
+    restaurant: FaUtensils,
+    roastery: FaFire,
+    attraction: FaLandmark,
+  };
 
-  const RedIcon = new L.Icon({
-   iconUrl: redMarker,
-   iconSize: [40, 40],
-   iconAnchor: [20, 40],
+  const Icon = iconMap[category] || FaStore;
+
+  return L.divIcon({
+    html: renderToStaticMarkup(
+      <Icon
+        style={{
+          color: selected ? "red" : "black",
+          fontSize: "32px",
+        }}
+      />
+    ),
+    className: "",
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
   });
+};
 
   const cafes = [
     
@@ -1317,7 +1346,10 @@ function Map() {
                <Marker
                   key={cafe.id}
                   position={cafe.position}
-                  icon={selectedCafe?.id === cafe.id ? RedIcon : BlueIcon}
+                  icon={createCafeIcon(
+                    cafe.category,
+                    selectedCafe?.id === cafe.id
+                  )}
                   eventHandlers={{
                       click: () => {
                       setSelectedCafe(cafe);
