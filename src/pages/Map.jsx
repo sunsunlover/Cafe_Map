@@ -85,7 +85,7 @@ function Map() {
     category: "coffee",
     area: "千代田区",
     position: [35.68321751234949, 139.76136624811463],
-    image: "/images/homerogo.png",
+    image: ["/images/スタバ.jpeg", "/images/homerogo.jpeg",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -154,6 +154,52 @@ function Map() {
     image: "/images/homerogo.png",
     description: "カフェ・喫茶",
   }, 
+
+  {
+    id: 42,
+    name: "きつね堂",
+    category: "cafe",
+    area: "足立区",
+    position: [35.764752566817386, 139.80521162178653],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },  
+  {
+    id: 43,
+    name: "Ogiso cafe",
+    category: "cafe",
+    area: "足立区",
+    position: [35.76808156956642, 139.77293785081744],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶店",
+  }, 
+  {
+    id: 44,
+    name: "パンいつぞ",
+    category: "bakery",
+    area: "足立区",
+    position: [35.78122377652729, 139.7737212319573],
+    image: "/images/homerogo.png",
+    description: "ベーカリー",
+  },    
+  {
+    id: 45,
+    name: "カフェ・サンクチュアリ",
+    category: "cafe",
+    area: "足立区",
+    position: [35.781699506722006, 139.78897276345475],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },    
+  {
+    id: 46,
+    name: "縁側カフェ（昭和の家）",
+    category: "cafe",
+    area: "足立区",
+    position: [35.800175720686006, 139.7982984623274],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },  
   
   ///ここまで足立区
 
@@ -456,55 +502,6 @@ function Map() {
 
     ///ここまで江戸川区 
 
-    ///ここから足立区
-
-  {
-    id: 42,
-    name: "きつね堂",
-    category: "cafe",
-    area: "足立区",
-    position: [35.764752566817386, 139.80521162178653],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },  
-  {
-    id: 43,
-    name: "Ogiso cafe",
-    category: "cafe",
-    area: "足立区",
-    position: [35.76808156956642, 139.77293785081744],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶店",
-  }, 
-  {
-    id: 44,
-    name: "パンいつぞ",
-    category: "bakery",
-    area: "足立区",
-    position: [35.78122377652729, 139.7737212319573],
-    image: "/images/homerogo.png",
-    description: "ベーカリー",
-  },    
-  {
-    id: 45,
-    name: "カフェ・サンクチュアリ",
-    category: "cafe",
-    area: "足立区",
-    position: [35.781699506722006, 139.78897276345475],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },    
-  {
-    id: 46,
-    name: "縁側カフェ（昭和の家）",
-    category: "cafe",
-    area: "足立区",
-    position: [35.800175720686006, 139.7982984623274],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },  
-  
-    ///ここまで足立区
 
     ///ここから北区  
 
@@ -1288,7 +1285,78 @@ function Map() {
     image: "/images/homerogo.png",
     description: "カフェ・喫茶",
   },
- 
+ {
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
+  {
+    id: 129,
+    name: "ARC",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
+{
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
+{
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
+  {
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
+  {
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },  
+  {
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
+  {
+    id: 128,
+    name: "Ikoi.ハナレ",
+    category: "cafe",
+    area: "台東区",
+    position: [35.70311792976743, 139.78422830848763],
+    image: "/images/homerogo.png",
+    description: "カフェ・喫茶",
+  },
 
 
 
