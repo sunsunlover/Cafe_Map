@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Rogo from "./pages/Rogo";
 import Map from "./pages/Map";
-import Home from "./pages/Home"
+import Home from "./pages/home"
 import List from "./pages/List";
 import CategoryList from "./pages/CategoryList";
 import Search from "./pages/Search";

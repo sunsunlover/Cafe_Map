@@ -76,7 +76,10 @@ function Map() {
     category: "coffee",
     area: "千代田区",
     position: [35.76552044155951, 139.8717455633526],
-    image: "/images/homerogo.png",
+    images: [
+      "/images/homerogo.png",
+      "/images/スタバ.jpeg",
+    ],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -85,7 +88,7 @@ function Map() {
     category: "coffee",
     area: "千代田区",
     position: [35.68321751234949, 139.76136624811463],
-    image: ["/images/スタバ.jpeg", "/images/homerogo.jpeg",],
+    images: ["/images/homerogo.png", "/images/スタバ.jpeg"],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -94,7 +97,7 @@ function Map() {
     category: "coffee",
     area: "台東区",
     position: [35.70406965221475, 139.79075123723138],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -103,7 +106,7 @@ function Map() {
     category: "attraction",
     area: "墨田区",
     position: [35.71092950059816, 139.81116173993047],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "建造物",
   },
   {
@@ -112,7 +115,7 @@ function Map() {
     category: "cafe",
     area: "千代田区",
     position: [35.67857089985157, 139.76728427039907],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "アートミュージアム・カフェ",
   },
 
@@ -124,7 +127,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.74657679970388, 139.80116339404577],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -133,7 +136,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.74461828414724, 139.804045147145],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -142,7 +145,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.74349828160191, 139.80219025866762],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -151,7 +154,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.74153470192527535,139.7986937417006],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
 
@@ -161,7 +164,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.764752566817386, 139.80521162178653],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -170,7 +173,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.76808156956642, 139.77293785081744],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶店",
   }, 
   {
@@ -179,7 +182,7 @@ function Map() {
     category: "bakery",
     area: "足立区",
     position: [35.78122377652729, 139.7737212319573],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ベーカリー",
   },    
   {
@@ -188,7 +191,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.781699506722006, 139.78897276345475],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },    
   {
@@ -197,7 +200,7 @@ function Map() {
     category: "cafe",
     area: "足立区",
     position: [35.800175720686006, 139.7982984623274],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   
@@ -211,7 +214,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.71736501267831,139.81575338322745],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -220,7 +223,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.71225524221233, 139.80943909370612],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -229,7 +232,7 @@ function Map() {
     category: "bakery",
     area: "墨田区",
     position: [35.71098178813709, 139.80401030817305],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ベーカリー",
   },
   {
@@ -238,7 +241,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.708827441907374, 139.81498600082057],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -247,7 +250,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.70838351263704, 139.81147217909455],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -256,7 +259,7 @@ function Map() {
     category: "cafe",
     area: "墨田区",
     position: [35.70451056457074, 139.81472930371817],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -265,7 +268,7 @@ function Map() {
     category: "cafe",
     area: "墨田区",
     position: [35.70201399460244, 139.81803018048376],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -274,7 +277,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.6977021933204, 139.81799167028916],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -283,7 +286,7 @@ function Map() {
     category: "cafe",
     area: "墨田区",
     position: [35.69800214954656, 139.81184055830968],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -292,7 +295,7 @@ function Map() {
     category: "coffee",
     area: "足立区",
     position: [35.74825802362632, 139.8019848837611835],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -301,7 +304,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.694593336425335, 139.80767325462918],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -310,7 +313,7 @@ function Map() {
     category: "roastery",
     area: "墨田区",
     position: [35.69798603318385, 139.8032566070799],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒー焙煎所",
   },
   {
@@ -319,7 +322,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.69700278558489, 139.8026526640665],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -328,7 +331,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.69486900976421, 139.8007249945142],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -337,7 +340,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.69383102052366, 139.7968169106943],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
   {
@@ -346,7 +349,7 @@ function Map() {
     category: "bakery",
     area: "墨田区",
     position: [35.7021864021552, 139.79623151516685],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ベーカリー",
   },
   {
@@ -355,7 +358,7 @@ function Map() {
     category: "roastery",
     area: "墨田区",
     position: [35.702708355664285, 139.7978320352652],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒー焙煎所",
   },
   {
@@ -364,7 +367,7 @@ function Map() {
     category: "cafe",
     area: "墨田区",
     position: [35.70487272090671, 139.80011256860243],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -373,7 +376,7 @@ function Map() {
     category: "coffee",
     area: "墨田区",
     position: [35.70552861671571, 139.79719140574178],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },
 
@@ -387,7 +390,7 @@ function Map() {
     category: "cafe",
     area: "江東区",
     position: [35.700886194635196, 139.83416212858134],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -396,7 +399,7 @@ function Map() {
     category: "bakery",
     area: "江東区",
     position: [35.6876624140193, 139.80040744307772],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ベーカリー",
   },
   {
@@ -405,7 +408,7 @@ function Map() {
     category: "cafe",
     area: "江東区",
     position: [35.67616032235468, 139.80660391425874],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -414,7 +417,7 @@ function Map() {
     category: "coffee",
     area: "江東区",
     position: [35.67261107541043, 139.79558138820028],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -423,7 +426,7 @@ function Map() {
     category: "coffee",
     area: "江東区",
     position: [35.65363949467704, 139.79331238716418],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },                        
   {
@@ -432,7 +435,7 @@ function Map() {
     category: "cafe",
     area: "江東区",
     position: [35.64410658946624, 139.82438291142014],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -441,7 +444,7 @@ function Map() {
     category: "cafe",
     area: "江東区",
     position: [35.6275556840388, 139.77253749420356],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   
@@ -455,7 +458,7 @@ function Map() {
     category: "coffee",
     area: "葛飾区",
     position: [35.76364206526425, 139.83966633006796],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },  
   {
@@ -464,7 +467,7 @@ function Map() {
     category: "cafe",
     area: "葛飾区",
     position: [35.764815980847885, 139.84875656815976],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -473,7 +476,7 @@ function Map() {
     category: "restaurant",
     area: "葛飾区",
     position: [35.76841951710792, 139.86806283913657],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "レストラン",
   },  
   {
@@ -482,7 +485,7 @@ function Map() {
     category: "cafe",
     area: "葛飾区",
     position: [35.75323398879645, 139.8513672636453],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
 
@@ -496,7 +499,7 @@ function Map() {
     category: "coffee",
     area: "江戸川区",
     position: [35.74341182588929, 139.8900643582228],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },  
 
@@ -512,7 +515,7 @@ function Map() {
     category: "cafe",
     area: "北区",
     position: [35.76279104278823, 139.72024361161914],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -521,7 +524,7 @@ function Map() {
     category: "cafe",
     area: "北区",
     position: [35.76130080626927, 139.7179159564252],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },   
   {
@@ -530,7 +533,7 @@ function Map() {
     category: "roastery",
     area: "北区",
     position: [35.75692888501654, 139.73930380891574],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒー焙煎所",
   }, 
   {
@@ -539,7 +542,7 @@ function Map() {
     category: "cafe",
     area: "北区",
     position: [35.74348675647755, 139.7461624440663],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
 
@@ -553,7 +556,7 @@ function Map() {
     category: "sweets",
     area: "練馬区",
     position: [35.74130272298908, 139.65593270223067],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "洋菓子店",
   }, 
 
@@ -567,7 +570,7 @@ function Map() {
     category: "cafe",
     area: "豊島区",
     position: [35.73309551964873, 139.70384877758937],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -576,7 +579,7 @@ function Map() {
     category: "cafe",
     area: "豊島区",
     position: [35.72898572937235, 139.7092540657096],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -585,7 +588,7 @@ function Map() {
     category: "cafe",
     area: "豊島区",
     position: [35.726421881324754, 139.71217393205464],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -594,7 +597,7 @@ function Map() {
     category: "cafe",
     area: "豊島区",
     position: [35.72647366246738, 139.71807050978902],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -603,7 +606,7 @@ function Map() {
     category: "coffee",
     area: "豊島区",
     position: [35.73071466039908, 139.72448267822594],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   }, 
   {
@@ -612,7 +615,7 @@ function Map() {
     category: "coffee",
     area: "豊島区",
     position: [35.738739375960385, 139.7461561743596],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   }, 
   {
@@ -621,7 +624,7 @@ function Map() {
     category: "cafe",
     area: "豊島区",
     position: [35.73832791703761, 139.74853304676745],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
 
@@ -635,7 +638,7 @@ function Map() {
     category: "coffee",
     area: "文京区",
     position: [35.72760931462276, 139.7456837592029],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   }, 
   {
@@ -644,7 +647,7 @@ function Map() {
     category: "cafe",
     area: "文京区",
     position: [35.726319229314704, 139.75566264967583],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -653,7 +656,7 @@ function Map() {
     category: "cafe",
     area: "文京区",
     position: [35.72517941179584, 139.764126387828],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -662,7 +665,7 @@ function Map() {
     category: "cafe",
     area: "文京区",
     position: [35.719799836038796, 139.76287450490508],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -671,7 +674,7 @@ function Map() {
     category: "coffee",
     area: "文京区",
     position: [35.71777353487007, 139.764772038255],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   }, 
   {
@@ -680,7 +683,7 @@ function Map() {
     category: "cafe",
     area: "文京区",
     position: [35.71832802647161, 139.76522740551766],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -689,7 +692,7 @@ function Map() {
     category: "restaurant",
     area: "文京区",
     position: [35.70450973685989, 139.75626423763444],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ブランチ・レストラン",
   }, 
 
@@ -707,7 +710,7 @@ function Map() {
     category: "coffee",
     area: "杉並区",
     position: [35.717486592845425, 139.58859416728404],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒースタンド",
   },   
   {
@@ -716,7 +719,7 @@ function Map() {
     category: "cafe",
     area: "杉並区",
     position: [35.70125274161524, 139.64752677631108],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -725,7 +728,7 @@ function Map() {
     category: "cafe",
     area: "杉並区",
     position: [35.70380326017269, 139.6519156252309],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -743,7 +746,7 @@ function Map() {
     category: "cafe",
     area: "杉並区",
     position: [35.707988554917776, 139.64980293420103],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },   
   {
@@ -752,7 +755,7 @@ function Map() {
     category: "cafe",
     area: "杉並区",
     position: [35.66768496663404, 139.6384739408805],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   
@@ -766,7 +769,7 @@ function Map() {
     category: "cafe",
     area: "中野区",
     position: [35.70937296936628, 139.65137504807714],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },   
   {
@@ -775,7 +778,7 @@ function Map() {
     category: "bakery",
     area: "中野区",
     position: [35.71445287607182, 139.6661341860655],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ベーカリー",
   },   
   {
@@ -784,7 +787,7 @@ function Map() {
     category: "coffee",
     area: "中野区",
     position: [35.7100803100654, 139.6646696923199],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   }, 
   {
@@ -793,7 +796,7 @@ function Map() {
     category: "cafe",
     area: "中野区",
     position: [35.70953862649058, 139.66579181018],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -802,7 +805,7 @@ function Map() {
     category: "coffee",
     area: "中野区",
     position: [35.7091716609905, 139.66653401982134],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "コーヒーショップ・喫茶店",
   },   
   {
@@ -824,7 +827,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.66654233159445, 139.64181313299053],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -833,7 +836,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.65691684548391, 139.64512238873408],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -842,7 +845,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.66340868651867, 139.66532947984902],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -851,7 +854,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.66296047701528, 139.66636860236343],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -860,7 +863,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.66298464254926, 139.66679412768335],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -869,7 +872,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.66333812176572, 139.66986417970637],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -878,7 +881,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.66398785836966, 139.6697543529446],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -887,7 +890,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.6618771049675, 139.66873762000145],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -896,7 +899,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.660140959098285, 139.66500556923063],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   }, 
   {
@@ -905,7 +908,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.65937725487706, 139.66446325814792],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },    
   {
@@ -914,7 +917,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.65963083335335, 139.66672572977433],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -923,7 +926,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.65918013159627, 139.66756005260868],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "喫茶店",
   },
   {
@@ -932,7 +935,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.65331208167317, 139.67208961556727],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -941,7 +944,7 @@ function Map() {
     category: "bakery",
     area: "世田谷区",
     position: [35.64968162109682, 139.6676220708273],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "ベーカリー",
   },  
   {
@@ -950,7 +953,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64806026137865, 139.66881913774645],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -959,7 +962,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.6464147932616, 139.67077930475267],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -968,7 +971,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64470771023262, 139.67918707312342],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -977,7 +980,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.640941552858955, 139.68517223135936],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -986,7 +989,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64320501682607, 139.66983385199086],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -995,7 +998,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64267119616137, 139.668427504252],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1004,7 +1007,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.642558246811944, 139.67043227714223],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1013,7 +1016,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.63905495346564, 139.66832719876885],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1031,7 +1034,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64214975047869, 139.66068995388915],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1040,7 +1043,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.643714226244356, 139.6551603020187],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1049,7 +1052,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.643472055633126, 139.64945491826728],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1058,7 +1061,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64274706161752, 139.64757784242903],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },      
 
@@ -1068,7 +1071,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.64313378706993, 139.64479461437074],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1077,7 +1080,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.652672694010725, 139.637940884753],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1086,7 +1089,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.632921149406606, 139.64580087050314],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1095,7 +1098,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.6250189844479, 139.65558315141325],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1104,7 +1107,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.59975042237825, 139.66976503392104],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1113,7 +1116,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.60804978302706, 139.6501478044779],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1122,7 +1125,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.628430776694195, 139.63603462247212],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1131,7 +1134,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.608325759489425, 139.63051827235782],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1140,7 +1143,7 @@ function Map() {
     category: "cafe",
     area: "世田谷区",
     position: [35.6181816971721, 139.61801783693284],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },  
   {
@@ -1183,7 +1186,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.72778946222348, 139.7653095315551],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1192,7 +1195,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.72348647304826, 139.76870177868022],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1201,7 +1204,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.723570948509256, 139.77013836264084],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1210,7 +1213,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.721167416260336, 139.77075435707894],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1219,7 +1222,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.715826669555135, 139.78252822692636],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1228,7 +1231,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.71392908856046, 139.78072499435746],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1237,7 +1240,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.7114189597793, 139.77909748213673],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1246,7 +1249,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.705873762836404, 139.77053522519765],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1255,7 +1258,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.70625228349862, 139.77805334625964],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1264,7 +1267,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.70186706653624, 139.77600369534292],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1273,7 +1276,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.705005494226356, 139.78316068119378],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1282,7 +1285,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.70412419493631, 139.78588474153236],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
  {
@@ -1291,7 +1294,7 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
   {
@@ -1300,66 +1303,9 @@ function Map() {
     category: "cafe",
     area: "台東区",
     position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
+    images:  ["/images/homerogo.png",],
     description: "カフェ・喫茶",
   },
-{
-    id: 128,
-    name: "Ikoi.ハナレ",
-    category: "cafe",
-    area: "台東区",
-    position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },
-{
-    id: 128,
-    name: "Ikoi.ハナレ",
-    category: "cafe",
-    area: "台東区",
-    position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },
-  {
-    id: 128,
-    name: "Ikoi.ハナレ",
-    category: "cafe",
-    area: "台東区",
-    position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },
-  {
-    id: 128,
-    name: "Ikoi.ハナレ",
-    category: "cafe",
-    area: "台東区",
-    position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },  
-  {
-    id: 128,
-    name: "Ikoi.ハナレ",
-    category: "cafe",
-    area: "台東区",
-    position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },
-  {
-    id: 128,
-    name: "Ikoi.ハナレ",
-    category: "cafe",
-    area: "台東区",
-    position: [35.70311792976743, 139.78422830848763],
-    image: "/images/homerogo.png",
-    description: "カフェ・喫茶",
-  },
-
-
-
 
 
 

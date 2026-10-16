@@ -1,5 +1,7 @@
 import { Sheet } from "react-modal-sheet";
 import { useState, useEffect } from "react";
+import "./BottomSheet.css";
+
 
 import { FiHeart } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
@@ -124,6 +126,12 @@ function BottomSheet({
     }
   };
 
+  const images = Array.isArray(selectedCafe?.images)
+    && selectedCafe.images.length > 0
+      ? selectedCafe.images
+      : selectedCafe?.image
+        ? [selectedCafe.image]
+        : [];
 
   return (
     <Sheet
@@ -143,14 +151,49 @@ function BottomSheet({
           {selectedCafe ? (
             <div style={{ padding: "20px" }}>
 
-              <img
-                src={selectedCafe.image}
-                alt={selectedCafe.name}
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                }}
-              />
+
+
+
+
+<div
+  className="cafe-image-list"
+  style={{
+    display: "flex",
+    gap: "10px",
+    overflowX: "auto",
+    overflowY: "hidden",
+    scrollSnapType: "x mandatory",
+    WebkitOverflowScrolling: "touch",
+    width: "100%",
+  }}
+>
+  {images.map((image, index) => {
+    const imagePath = image.startsWith("/")
+      ? image
+      : `/${image}`;
+
+    return (
+     
+      <img className="cafe-image"
+        key={`${selectedCafe.id}-${index}`}
+        src={imagePath}
+        alt={`${selectedCafe.name}の写真${index + 1}`}
+        style={{
+          flex: "0 0 100%",
+          minWidth: 0,
+          height: "220px",
+          objectFit: "cover",
+          borderRadius: "10px",
+          scrollSnapAlign: "start",
+        }}
+      />
+    );
+  })}
+</div>
+
+
+
+
 
               <div
                 style={{
