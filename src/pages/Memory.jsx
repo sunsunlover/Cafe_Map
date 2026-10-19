@@ -11,6 +11,9 @@ function Memory() {
       <button onClick={() => navigate("/visited")}>
         行ったところ
       </button>
+      <button className="back-button" onClick={() => navigate("/Map")}>
+        前の画面に戻る
+      </button>
     </div>
 
   );

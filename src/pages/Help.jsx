@@ -7,8 +7,10 @@ function Help() {
   return (
     <div className="help-container">
       <h1>ヘルプ</h1>
-    </div>
-
+    <button className="back-button" onClick={() => navigate("/Map")}>
+      前の画面に戻る
+    </button>
+</div>
   );
 }
 

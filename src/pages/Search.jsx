@@ -7,8 +7,10 @@ function Search() {
   return (
     <div className="search-container">
       <h1>検索</h1>
+      <button className="back-button" onClick={() => navigate("/Map")}>
+        前の画面に戻る
+      </button>
     </div>
-
   );
 }
 

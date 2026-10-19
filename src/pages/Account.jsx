@@ -7,6 +7,9 @@ function Account() {
   return (
     <div className="account-container">
       <h1>アカウント</h1>
+      <button className="back-button" onClick={() => navigate("/Map")}>
+        前の画面に戻る
+      </button>
     </div>
 
   );
