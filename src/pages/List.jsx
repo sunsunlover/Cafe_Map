@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import './cafehome.css';
 
-import { FaHeart } from "react-icons/fa";
-
 function List() {
   const navigate = useNavigate();
  
@@ -10,7 +8,7 @@ function List() {
     <div className="list-container">
       <h1>保存リスト</h1>
       <button onClick={() => navigate("/category/coffee")}>
-        <FaHeart size={15} />Coffee
+        Coffee
       </button>
 
       <button onClick={() => navigate("/category/cafe")}>

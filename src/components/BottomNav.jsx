@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
+import "./BottomNav.css";
+
 import {
   FaMapMarkedAlt,
   FaHeart,

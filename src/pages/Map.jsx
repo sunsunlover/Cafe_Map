@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 
 import BottomSheet from "../components/BottomSheet";
-import BottomNav from "../components/BottomNav";
 import L from "leaflet";
 import { renderToStaticMarkup } from "react-dom/server";
 
@@ -39,6 +38,9 @@ function Map() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [selectedCafe, setSelectedCafe] = useState(null);
   const [snapIndex, setSnapIndex] = useState(2);
+
+  // ピンの表示・非表示
+const [showPins, setShowPins] = useState(true);
 
   const createCafeIcon = (category, selected) => {
   const iconMap = {
@@ -1356,25 +1358,32 @@ function Map() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-            {cafes.map((cafe) => (
-               <Marker
-                  key={cafe.id}
-                  position={cafe.position}
-                  icon={createCafeIcon(
-                    cafe.category,
-                    selectedCafe?.id === cafe.id
-                  )}
-                  eventHandlers={{
-                      click: () => {
-                      setSelectedCafe(cafe);
-                     setSheetOpen(true);
-                  },
-                }}
-              />
-            ))}
+{showPins && cafes.map((cafe) => (
+  <Marker
+    key={cafe.id}
+    position={cafe.position}
+    icon={createCafeIcon(
+      cafe.category,
+      selectedCafe?.id === cafe.id
+    )}
+    eventHandlers={{
+      click: () => {
+        setSelectedCafe(cafe);
+        setSheetOpen(true);
+      },
+    }}
+  />
+))}
           
 
       </MapContainer>
+
+      <button
+  className="pin-toggle-btn"
+  onClick={() => setShowPins(prev => !prev)}
+>
+  {showPins ? "📍 ピンを非表示" : "📍 ピンを表示"}
+</button>
       
       <BottomSheet
         open={sheetOpen}
@@ -1397,8 +1406,6 @@ function Map() {
         </div>
       </button>
      )}
-
-     <BottomNav />
 
     </div>
   );

@@ -30,11 +30,11 @@ function CategoryList() {
               }
              >
 
-            <img
-              src={cafe.image}
-              alt={cafe.name}
-              className="cafe-card-image"
-            />
+           <img
+            src={cafe.image || cafe.images?.[0]}
+            alt={cafe.name}
+            className="cafe-card-image"
+           />
 
             <div className="cafe-card-info">
               <h2>{cafe.name}</h2>

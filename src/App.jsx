@@ -1,9 +1,10 @@
+
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 import Rogo from "./pages/Rogo";
 import Map from "./pages/Map";
-import Home from "./pages/home"
+import Home from "./pages/home";
 import List from "./pages/List";
 import CategoryList from "./pages/CategoryList";
 import Search from "./pages/Search";
@@ -13,10 +14,14 @@ import Memory from "./pages/Memory";
 import VisitedList from "./pages/VisitedList";
 import VisitedCategoryList from "./pages/VisitedCategoryList";
 
+import BottomNav from "./components/BottomNav";
 
-function App() {
+// ロゴ画面以外でBottomNavを表示
+function Layout() {
+  const location = useLocation();
+
   return (
-    <Router>
+    <>
       <Routes>
         <Route path="/" element={<Rogo />} />
         <Route path="/map" element={<Map />} />
@@ -30,6 +35,16 @@ function App() {
         <Route path="/visited" element={<VisitedList />} />
         <Route path="/visited/:category" element={<VisitedCategoryList />} />
       </Routes>
+
+      {location.pathname !== "/" && <BottomNav />}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Layout />
     </Router>
   );
 }
