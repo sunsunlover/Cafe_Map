@@ -7,7 +7,7 @@ import {
   FaHeart,
   FaSearch,
   FaCalendarAlt,
-  FaBookOpen,
+  FaRegQuestionCircle,
   FaUser
 } from "react-icons/fa";
 
@@ -34,7 +34,7 @@ function BottomNav() {
       </button>
 
       <button onClick={() => navigate("/Help")}>
-        <FaBookOpen size={28} />
+        <FaRegQuestionCircle size={28} />
       </button>
 
       <button onClick={() => navigate("/Account")}>

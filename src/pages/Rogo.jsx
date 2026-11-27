@@ -7,7 +7,7 @@ function Rogo() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/Home");
+      navigate("/Map");
     }, 3000);
 
     return () => clearTimeout(timer);

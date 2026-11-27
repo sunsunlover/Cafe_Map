@@ -1382,7 +1382,7 @@ const [showPins, setShowPins] = useState(true);
   className="pin-toggle-btn"
   onClick={() => setShowPins(prev => !prev)}
 >
-  {showPins ? "📍 ピンを非表示" : "📍 ピンを表示"}
+  {showPins ? "ピンを非表示" : "ピンを表示"}
 </button>
       
       <BottomSheet
